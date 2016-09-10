@@ -1,7 +1,8 @@
 import os
 import builtins
 
-def _dotenv():
+@events.on_chdir
+def _dotenv(*args, **kwargs):
     dirs = $PWD.split('/')
 
     env = None
@@ -37,6 +38,4 @@ def _dotenv():
 
     $DOTENV = env
 
-    return ''
-
-$FORMATTER_DICT['dotenv'] = _dotenv
+_dotenv()

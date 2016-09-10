@@ -23,6 +23,9 @@ setup(
     zip_safe=True,
     include_package_data=False,
     platforms='any',
+    install_requires=[
+        'xonsh>=0.4.6',
+    ],
     classifiers=[
         'Environment :: Console',
         'License :: OSI Approved :: BSD License',
