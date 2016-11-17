@@ -12,7 +12,4 @@ Add those lines to your ```~/.xonshrc```:
 
 ```shell
 xontrib load dotenv
-$PROMPT=$PROMPT + '{dotenv}'
 ```
-
-It won't modify the prompt, just load .env files each time prompt is rendered.
